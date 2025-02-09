@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url(img/heartsbg.jpg);
+    background-size: contain;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mainWindow{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 38vw;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;    
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.windowContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.windowHeader {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.headerGIF{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.headerText{
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+    /* For Phones */
+    .mainWindow{
+        height: 50vh;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    /* For Phones */
+    .mainWindow{
+        height: 40vh;
+        width: 70vw;
+    }
+
+    .windowHeader {
+        justify-content: center;
+    }
+}
