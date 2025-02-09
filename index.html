@@ -7,20 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
     <title>Will you be my Valentines?????</title>
 </head>
 <body>
     <div class="mainWindow">
         <div class="windowContent">
             <div class="windowHeader">
-                <img src="img/peach-and-goma-goma.gif" alt="gif-giving-flower" class="headerGIF">
-                <div class="windowText">Will you be my Valentine???</div>    
+                <img id="gifImage" src="img/peach-and-goma-goma.gif" alt="gif-giving-flower" class="headerGIF">
+                <div class="windowText" id="windowText">Can you be my Valentine???</div>    
             </div>
         </div>
         <div class="buttonContainer">
-            <button class="yes">YES</button>
-            <button class="no">NO</button>
+            <button id="yesButton">YES</button>
+            <button id="noButton">NO</button>
         </div>
     </div>
 </body>
