@@ -17,8 +17,10 @@ body {
 .mainWindow{
     display: flex;
     flex-direction: column;
-    height: 35vh;
-    width: 38vw;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 30vw;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;    
     background-color: pink;
@@ -34,24 +36,47 @@ body {
 .windowHeader {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    justify-content: center;
+    /* padding-top: 10px; */
 }
 
 .headerGIF{
-    width: 100%;
-    max-width: 150px;
+    width: 50%;
+    max-width: 200px;
     height: auto;
+    padding: 10px;
 }
 
-.headerText{
-    flex-grow: 1;
+.windowText{
+    flex: 20%;
+    font-family: 'sour Gummy', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-@media only screen and (max-width: 768px){
+.buttonContainer{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+button{
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'sour Gummy', sans-serif;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(170, 51, 106);
+    height: 50px;
+    width: 100px;
+}
+
+@media only screen and (max-width: 790px){
     /* For Phones */
     .mainWindow{
         height: 50vh;
@@ -63,10 +88,17 @@ body {
     /* For Phones */
     .mainWindow{
         height: 40vh;
-        width: 70vw;
+        width: 80vw;
     }
 
     .windowHeader {
         justify-content: center;
+    }
+
+    .headerGIF{
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
     }
 }
